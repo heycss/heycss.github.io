@@ -16,6 +16,11 @@
     <div class="thin-container">
       <h1 id="big-branding">Hey CSS !</h1>
       <h3 id="sub-heading-brand"><b>HeyCSS</b> takes you to an innovative ride to understand the complexity of CSS. Why wait for a designer , go through these readings and say hey to css.</h3>
+      <div class="container all-center">
+         <a href="https://twitter.com/share" class="twitter-share-button" data-via="heycss">Tweet</a>
+         <a href="https://twitter.com/migzing" class="twitter-follow-button" data-show-count="false">Follow @migzing </a>
+     </div>
+
     </div> <!--- thin-container -->
     <div class="design-line"></div>   
     <div id="fluid-container" class="all-center">
@@ -23,11 +28,30 @@
       <a href="posts/advanced/" class="hey-button big extra-margin">ADVANCED READING</a>
       <a href="posts/doubts/" class="hey-button big extra-margin">POPULAR DOUBTS</a>
     </div>
+    <div id="disqus_thread"></div>
   </div><!-- fluid container --->
+
+
   <!---- MAIN CONTAINER OF THE PAGE ---->
+  
+  <!---- scripts ---->
+  <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'heycss1'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   </script>
   <script type="text/javascript">
    try {
@@ -35,5 +59,6 @@
        pageTracker._trackPageview();
    } catch(err){}
   </script>
+  <!--- script ---->
   </body>
 </html>
