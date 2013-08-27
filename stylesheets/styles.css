@@ -1,6 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900');
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,100,900');             
 @import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic');  
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 /* 
   For code : 'Ubuntu Mono';
   For headings : 'roboto';
@@ -114,6 +115,8 @@ small {
 .pull-right{ float: right; }
 .fluid-container{ overflow: hidden; }
 .thin-container{ width:40%; margin: auto; }
+.div-fixed{ position: fixed; background:rgba(255,255,255,255.95); }
+#top-header{ width:100%; top:0px; }
 @media print, screen and (max-width: 960px) {
 
 }
@@ -137,8 +140,13 @@ small {
   text-align: center;
   font-weight:900;
   font-size:4em;
-  margin-top:40px;
+  margin-top:60px;
   color:#E58484;
+}
+.easy-heading{
+  text-align: center;
+  font-weight: 200;
+  font-size:1.3em;
 }
 #sub-heading-brand{ 
   text-align: center;
@@ -163,7 +171,14 @@ ul.link-board li a{ padding:2px 0px; font-size: 16px; font-weight: bold; }
 ul.link-board li span{ color:#999; font-size: 11px; 
   font-family: 'roboto',sans-serif; display: block;}
 ul.link-board li p{ padding:5px 0px; text-align: justify;}
-
+#top-header a{
+  display: inline-block;
+  font-family: 'Roboto',sans-serif;
+  text-transform: uppercase;
+  padding:10px 10px; 
+  font-size: 1.1em;
+}
+#top-header a.active{ font-weight: 900; }
 .extra-margin{ margin:10px; }
 .hey-button {
     font-family: 'Roboto',sans-serif;
