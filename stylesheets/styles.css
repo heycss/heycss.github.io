@@ -41,11 +41,11 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#069;
+  color:#E58484;
   font-weight:400;
-  text-decoration:none;
+  text-decoration:underline;
 }
-a:hover{ background: #004d7a; color:#fff; }
+a:hover{ background: #E58484; color:#fff;  }
 
 a small {
   font-size:11px;
@@ -64,11 +64,10 @@ blockquote {
 code, pre {
   font-family:'Ubuntu Mono',Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
-  font-size:12px;
+  font-size:16px;
 }
 
 pre {
-  padding:8px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -111,12 +110,20 @@ small {
 .big{ font-size: 0.95em; }
 .all-center{ text-align: center; min-height: 55px; }
 .design-line{ border-top: 1px solid #f2f2f2; }
+.design-line-broad{ border-top: 5px solid #f2f2f2; }
 .pull-left{ float:left; }
 .pull-right{ float: right; }
 .fluid-container{ overflow: hidden; }
-.thin-container{ width:40%; margin: auto; }
+.thin-container{ max-width: 540px; margin: auto; }
+.mini-captialise{ font-family: 'roboto' ,sans-serif;  
+   font-weight: 700; font-size:1.5em; text-transform: uppercase; 
+   color:#888; margin: 0 0 10px 0; display: inline-block;
+}
 .div-fixed{ position: fixed; background:rgba(255,255,255,255.95); }
 #top-header{ width:100%; top:0px; }
+#site-header{ text-align: center; border-bottom: 1px solid #f4f4f4; padding:20px 0;}
+#site-logo{ font-family: 'Roboto',serif; font-size:3em; font-weight:700;
+ text-decoration: none; }
 @media print, screen and (max-width: 960px) {
 
 }
@@ -180,6 +187,66 @@ ul.link-board li p{ padding:5px 0px; text-align: justify;}
 }
 #top-header a.active{ font-weight: 900; }
 .extra-margin{ margin:10px; }
+
+#page-title{ 
+   font-family: 'roboto',sans-serif;
+   font-weight: 600;
+   line-height: 1em;
+   font-size: 2.6em; color:#333;
+}
+#page-subtext{
+   font-family: 'roboto',sans-serif;
+   font-size: 1.2em;
+   color:#777;
+   padding:10px 10px 0px;
+   line-height: 1.3em;
+   font-weight: 400;
+}
+#page-note{
+   font-family: 'roboto',sans-serif;
+   font-size: 1.1em;
+   color:#444; line-height: 1.4em;
+   font-weight: 400;
+   font-style: italic;
+   margin:0px 10px 10px ;
+ }
+ #post-wrapper{
+   font-family: 'Merriweather',sans-serif; font-size:1.05em; color:#333;
+   padding:10px; line-height: 1.8em; margin:10px 0px; font-weight: 400;   
+ }
+ #post-wrapper pre{
+  overflow-x: auto; padding: 0.75em 0.5em;
+  border: 1px solid #e6e6e6;
+  font-family: 'Ubuntu Mono',sans-serif;
+  border-left-width: 5px;
+  font-size:1em;
+  background: #fcfcfc;
+ }
+ .question{ display: inline-block; color:#E58484; font-size:1.4em;
+  font-family: 'Merriweather',sans-serif; font-weight: bold; 
+  }
+ .code-element{ 
+   font-family:'Ubuntu Mono',Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+   color:#44A1D6; font-weight: bold; 
+   font-size:16px;
+  }
+ #post-wrapper ul{ list-style: square; }
+ #site-footer:before {
+   content: "";
+   display: block;
+   max-width: 540px;
+   margin: 0 auto 2em;
+   height: 1px;
+   background: -webkit-linear-gradient(left, rgba(255,255,255,0), #ccc, rgba(255,255,255,0));
+   background: -moz-linear-gradient(left, rgba(255,255,255,0), #ccc, rgba(255,255,255,0));
+   background: -ms-linear-gradient(left, rgba(255,255,255,0), #ccc, rgba(255,255,255,0));
+   background: -o-linear-gradient(left, rgba(255,255,255,0), #ccc, rgba(255,255,255,0));
+}
+ #site-footer{ text-align: center; font-family: 'Roboto',sans-serif; padding: 0 0 10px 0; }
+.highlight{ background: #fe6; color:#444; }
+.site-footer-links a{ display: inline-block; padding:0 5px; margin-top:10px; 
+   font-family: 'Roboto',sans-serif; color:#aaa;
+}
 .hey-button {
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
